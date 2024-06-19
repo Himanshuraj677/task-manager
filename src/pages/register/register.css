@@ -6,47 +6,6 @@
     align-items: center;
 }
 
-.flex-container {
-    height: 95%;
-    min-width: 800px;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.left-container {
-    color: white;
-    width: 60%;
-    height: 100%;
-    background: url('../../assets/images/login-bg.jpg') center top no-repeat fixed;
-    padding: 40px;
-}
-
-.right-container {
-    width: 40%;
-    height: 100%;
-    background-color: white;
-    padding: 40px;
-}
-
-h1 {
-    font-size: 10em;
-    text-align: center;
-}
-
-.left-container > .typewriter {
-    margin-top: 80px;
-    font-size: 2.5em;
-}
-
-.right-container > p:first-child {
-    font-size: 60px;
-    margin: 100px 0;
-    font-weight: bold;
-}
-
 .login {
     margin-top: 30px;
 }

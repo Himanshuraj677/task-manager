@@ -1,5 +1,9 @@
 :root {
     --gradient-color: linear-gradient(218deg, rgba(149,80,171,1) 0%, rgba(155,176,217,1) 47%, rgba(29,198,219,1) 96%);
+    --secondary-color: rgb(223, 220, 220);
+    --primary-color: white;
+    --button-color: #007bff;
+    --black: #000000;
 }
 * {
     margin: 0;
@@ -8,12 +12,12 @@
 }
 
 .app {
-    background: rgb(149,80,171);
-    background: var(--gradient-color);
+    background-color: var(--secondary-color);
     min-width: 100vw;
     min-height: 100vh;
 }
 
 a {
     text-decoration: none;
+    color: var(--black);
 }
