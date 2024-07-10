@@ -1,0 +1,58 @@
+/* src/pages/NotFoundPage/NotFoundPage.css */
+
+.not-found-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .not-found-content {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .not-found-title {
+    font-size: 10rem;
+    font-weight: bold;
+    color: #ff4040;
+    margin: 0;
+  }
+  
+  .not-found-text {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .not-found-title {
+      font-size: 5rem;
+    }
+  
+    .not-found-text {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .not-found-title {
+      font-size: 3rem;
+    }
+  
+    .not-found-text {
+      font-size: 1rem;
+    }
+  }
+  

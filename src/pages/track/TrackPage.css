@@ -1,0 +1,77 @@
+.track-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.track-main {
+  width: 100%;
+  max-width: 800px;
+  margin: 75px auto;
+}
+
+.track-form-container {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.track-form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.track-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.track-form-container input {
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+.track-form-container button {
+  padding: 10px 20px;
+  background-color: #187e30;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.track-form-container button:hover {
+  background-color: var(--tertiary-color);
+}
+
+.link-details {
+  margin-top: 20px;
+  overflow: auto;
+}
+
+.link-details h3 {
+  margin-bottom: 10px;
+}
+
+.link-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.link-details th, .link-details td {
+  color: var(--text-color);
+  padding: 10px;
+  border: 1px solid var(--tertiary-color);
+}
+
+.link-details th {
+  background-color: #9ec58e;
+}
+
+.link-details tbody tr:nth-child(odd) {
+  background-color: #b3e59c;
+}

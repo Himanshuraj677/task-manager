@@ -1,23 +1,14 @@
 :root {
-    --gradient-color: linear-gradient(218deg, rgba(149,80,171,1) 0%, rgba(155,176,217,1) 47%, rgba(29,198,219,1) 96%);
-    --secondary-color: rgb(223, 220, 220);
-    --primary-color: white;
-    --button-color: #007bff;
-    --black: #000000;
+    --primary-color: #6deb2a;
+    --tertiary-color: #12661c;
+    --background-color: #f0f0f0;
+    --text-color: #333333;
 }
-* {
+
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
 }
 
-.app {
-    background-color: var(--secondary-color);
-    min-width: 100vw;
-    min-height: 100vh;
-}
 
-a {
-    text-decoration: none;
-    color: var(--black);
-}

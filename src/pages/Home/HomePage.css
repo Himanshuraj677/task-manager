@@ -1,0 +1,118 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    min-height: calc(100vh - 75px);
+    padding-top: 4em;
+  }
+  
+  .home-header {
+    width: 100%;
+    padding: 3em 0;
+    text-align: center;
+  }
+  
+  .header-content h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+  }
+  
+  .header-content p {
+    font-size: 1.5em;
+    color: var(--primary-color);
+  }
+  
+  .home-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em 0;
+  }
+  
+  .link-form-container {
+    background: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .link-form-container h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .link-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .link-form-container form input {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+  }
+  
+  .link-form-container form button {
+    padding: 0.75em 2em;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .link-form-container form button:hover {
+    background-color: var(--tertiary-color);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-content h1 {
+      font-size: 2em;
+    }
+  
+    .header-content p {
+      font-size: 1.2em;
+    }
+  
+    .link-form-container {
+      width: 90%;
+    }
+  }
+
+  .result {
+    margin-top: 20px;
+}
+
+.result h3 {
+    margin-bottom: 10px;
+}
+
+.result a {
+    color: #56ab2f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.result a:hover {
+    text-decoration: underline;
+}
+  

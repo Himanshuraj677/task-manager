@@ -1,74 +1,60 @@
-.nav-horizontal {
-    width: 100vw;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+:root {
+    --navbar-bg: #333;
+    --navbar-text: #fff;
 }
 
-.nav-task {
-    font-size: 1.5em;
-    display: flex;
-    height: 100%;
-    width: 150px;
-    background-color: var(--primary-color);
-    justify-content: center;
-    align-items: center;
+.navbar {
+  background-color: var(--navbar-bg);
+  padding: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 75px;
 }
 
-.nav-flex-box {
-    display: flex;
-    height: 70px;
-    align-items: center;
-    width: calc(100% - 150px);
-    background-color: var(--secondary-color);
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.search-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: calc(100% - 240px);
-    height: 70px;
+.navbar-title {
+  font-size: 1.8em;
+  color: var(--navbar-text);
 }
 
-.task-search {
-    border-radius: 15px;
-    height: 55%;
-    width: 100%;
-    outline: none;
-    padding: 2px 0px 2px 60px;
-    border: none;
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
 }
 
-.search-icon {
-    width: 30px;
-    position: relative;
-    left: 50px;
+.navbar-menu li {
+  display: inline;
 }
 
-.account-profile {
-    margin-left: 30px;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.navbar-menu a {
+  text-decoration: none;
+  color: var(--navbar-text);
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.profile-icon {
-    width: 40px;
-    height: 40px;
-    background-color: grey;
-    border-radius: 50px;
+.navbar-menu a:hover {
+  color: var(--navbar-btn-bg);
 }
 
-.nav-vertical {
-    position: absolute;
-    width: 150px;
-    height: calc(100% - 70px);
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    background-color: var(--secondary-color);
-    padding: 30px;
+
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: 1em;
+  }
 }
